@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "notes": "# Donghua Player v0.2.0\n\nPrimera versión preparada para actualizaciones dentro de la app. Los instaladores\nse distribuyen públicamente; el código del proyecto continúa privado.\n\n## Actualizaciones\n\n- Aviso de nueva versión, descarga explícita y acción separada de instalar y reiniciar.\n- Paquetes firmados: se comprueba la integridad y la versión antes de instalar.\n- Conservación de biblioteca y preferencias; guardado de progreso antes del cierre.\n- Canal preview explícito, sin depender de la selección de latest de GitHub.\n\nLos usuarios de 0.1.x deben instalar 0.2.0 manualmente una vez. Las siguientes\nversiones podrán ofrecerse dentro de la app. No se instala ni se reinicia sin\nconfirmación. El actualizador usa Windows NSIS, macOS Apple Silicon y Linux\nAppImage; DEB mantiene su actualización manual o mediante gestor de paquetes.\n\n## Biblioteca e interfaz\n\nIncluye eliminación individual del historial, ocultación de series completas de\nContinuar viendo, miniaturas en historial y encabezado/botoneras compactos de la\nreedición 0.1.1. La biblioteca existente se conserva y migra con respaldo cuando\nes necesario. Cierra la versión anterior antes de instalar; conserva su carpeta\nde datos. No ejecutes dos versiones simultáneamente.\n\n## Límites\n\n- Los paquetes no tienen certificado de distribución Windows ni notarización Apple;\n  la firma del updater no sustituye los controles de seguridad del sistema.\n- La disponibilidad, progreso y reproducción continua dependen de fuente y servidor.\n- Descargas/DDL-Play continúa deshabilitado para distribución.\n- Preparación local: la prueba completa de actualización entre dos versiones en\n  Windows y Linux debe completarse antes de anunciar compatibilidad validada.\n\nSi reportas un error, indica sistema, versión, fuente, episodio, servidor y pasos.\nNo adjuntes bases de datos personales ni credenciales.\n",
+  "pub_date": "2026-09-27T15:08:43.428Z",
+  "platforms": {
+    "windows-x86_64": {
+      "url": "https://github.com/alabastida/donghua-player-releases/releases/download/v0.2.0/Donghua.Player_0.2.0_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUXYwVDhGWW0wdWh1ajBRU2E2dE1xVCtsYmc4bHduQVBBWVI3RjgzVVIrZXRjdFlqRU5UcGIrQzUxek9EbFIra2xGZjk4VDhwQ2FTSFlaTXdlMTFHTy9kSXRBYjJDNmdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTIxNjQzCWZpbGU6RG9uZ2h1YSBQbGF5ZXJfMC4yLjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMi4wCituVm9aSmlhSlczUGplbVBvc0FnbEhzNC9mT2taT2EyQytVZFdHTDhwR1hhL1lTcldBdklpK09xUUJmckpUbE9sWWxqNVZSQ3VEaUdUVzlnVVY0SER3PT0K"
+    },
+    "darwin-aarch64": {
+      "url": "https://github.com/alabastida/donghua-player-releases/releases/download/v0.2.0/Donghua.Player.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUXYwVDhGWW0wdW5OUGdhTm04OEVMc2N3ZjZERHBPci9WWTZYMkVUdU90aSt0WU0wN1EyUDByQTA0bDc0cTRINlVtYjVzbnE5dno4M2ROMVp5Mm8yTDlxR0Z4dVhlTHc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTIxMDMyCWZpbGU6RG9uZ2h1YSBQbGF5ZXIuYXBwLnRhci5negl2ZXJzaW9uOjAuMi4wCmhqbEdKczlrZGY1WXBhMkw2dU5UNXVZTmhmTjRibFZXSmZkK3hKT2lJOTRyWkFDVnNSYWduZTZ1WlI4M3pMNEI1VGhzUlJyWWpxRVVFK0Y1SGVpR0NBPT0K"
+    },
+    "linux-x86_64": {
+      "url": "https://github.com/alabastida/donghua-player-releases/releases/download/v0.2.0/Donghua.Player_0.2.0_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUXYwVDhGWW0wdXY1azRLMC83WTJOcG81My9rZzcrZDN5VFRVZHFmendzc1dEcWhiNWZhNU0xa3BtSkxwUzNYblRuSENhUFdqV3BoU2xyZlhEbkN6K2pFaVdMV0IzRXcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTIxNDg1CWZpbGU6RG9uZ2h1YSBQbGF5ZXJfMC4yLjBfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjowLjIuMApaWXZHY0ZJWlVXMHBZQzB1eUVKenQyVkQwMjZGdHAxcEJieFRzNFRRWmtGcWNQOXV6T1lzdDkzNXoxdmsyR3BZeng4cEFvU3k5QmxrOTk1WUNQRzRDZz09Cg=="
+    }
+  }
+}
