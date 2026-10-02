@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://api.github.com; base-uri 'none'; form-action 'none'">
+<title>Abrir en Donghua Player</title>
+<meta property="og:title" content="Abrir en Donghua Player">
+<meta property="og:description" content="Te compartieron algo para ver en Donghua Player.">
+<meta property="og:image" content="https://alabastida.github.io/donghua-player-releases/open/icon.png">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="open.css">
+<script src="open.js" defer></script>
+</head>
+<body>
+<main class="card">
+  <header>
+    <img src="icon.png" alt="" width="48" height="48">
+    <div>
+      <h1 id="title">Donghua Player</h1>
+      <p id="subtitle" class="muted">Reproductor de donghua para escritorio</p>
+    </div>
+  </header>
+
+  <section id="target" hidden>
+    <p class="label"><span class="dot"></span><span id="provider"></span></p>
+    <p id="path" class="path"></p>
+    <button id="open" type="button" class="primary">Abrir en Donghua Player</button>
+    <p id="hint" class="muted small">Tu navegador te preguntará si quieres abrir la app. Acepta.</p>
+  </section>
+
+  <section id="invalid" hidden>
+    <p>Este link no es válido o está incompleto. Pide que te lo vuelvan a enviar.</p>
+  </section>
+
+  <section id="fallback">
+    <h2 id="fallback-title">¿No tienes la app?</h2>
+    <p class="muted small" id="fallback-text">Descárgala gratis. Después de instalarla, vuelve a abrir este link.</p>
+    <div id="downloads" class="downloads"></div>
+    <div class="secondary-actions">
+      <a id="original" class="secondary" hidden rel="noreferrer">Ver en el sitio original</a>
+      <button id="copy" type="button" class="secondary" hidden>Copiar link para la app</button>
+    </div>
+  </section>
+</main>
+</body>
+</html>
