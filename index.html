@@ -1,5 +1,124 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="robots" content="noindex">
-<meta http-equiv="refresh" content="0; url=open/">
-<title>Donghua Player</title></head>
-<body><a href="open/">Donghua Player</a></body></html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://api.github.com; base-uri 'none'; form-action 'none'">
+<title>Donghua Player</title>
+<meta name="description" content="App de escritorio para ver donghua y anime de varias fuentes en un solo lugar, con biblioteca local y Continuar viendo.">
+<meta property="og:title" content="Donghua Player">
+<meta property="og:description" content="Tus donghua y anime de varias fuentes en una sola app de escritorio.">
+<meta property="og:image" content="https://alabastida.github.io/donghua-player-releases/assets/screenshots/home.jpg">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><img src="assets/icon.png" alt="" width="28" height="28"><span>Donghua Player</span></a>
+  <nav>
+    <a href="#features" data-i18n="nav.features">Funciones</a>
+    <a href="#screenshots" data-i18n="nav.screenshots">Capturas</a>
+    <a href="#download" data-i18n="nav.download">Descargar</a>
+    <button id="lang" type="button" class="lang" aria-label="Language">EN</button>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow" data-i18n="hero.eyebrow">App de escritorio · Windows · macOS · Linux</p>
+      <h1 data-i18n="hero.title">Tus donghua y anime, en una sola app</h1>
+      <p class="lead" data-i18n="hero.lead">Explora catálogos de varias fuentes, abre un episodio y sigue donde lo dejaste. Tu biblioteca se guarda en tu equipo.</p>
+      <div class="cta">
+        <a id="primary-download" class="button primary" href="https://github.com/alabastida/donghua-player-releases/releases" rel="noreferrer" data-i18n="hero.download">Descargar</a>
+        <a class="button" href="#download" data-i18n="hero.all">Todas las descargas</a>
+      </div>
+      <p id="version" class="muted small"></p>
+    </div>
+    <figure class="hero-shot window">
+      <img src="assets/screenshots/home.jpg" width="1600" height="974" alt="Donghua Player mostrando los episodios con audio chino de KickAssAnime" data-i18n-alt="shot.home.alt">
+    </figure>
+  </section>
+
+  <section id="features" class="features">
+    <h2 data-i18n="features.title">Lo que incluye</h2>
+    <div class="grid">
+      <article>
+        <h3 data-i18n="f.sources.title">Cuatro fuentes, una interfaz</h3>
+        <p data-i18n="f.sources.text">Mundo Donghua, DonghuaStream, Lucifer Donghua y KickAssAnime, cada una con su catálogo, búsqueda y últimos episodios.</p>
+        <img class="inset" src="assets/screenshots/sources.jpg" width="525" height="288" loading="lazy" alt="Selector de fuente en el encabezado de la app" data-i18n-alt="shot.sources.alt">
+      </article>
+      <article>
+        <h3 data-i18n="f.continue.title">Continuar viendo</h3>
+        <p data-i18n="f.continue.text">Biblioteca, series seguidas e historial. Retoma cada serie en el episodio y el minuto donde te quedaste.</p>
+      </article>
+      <article>
+        <h3 data-i18n="f.player.title">Reproductor sin distracciones</h3>
+        <p data-i18n="f.player.text">Episodio anterior y siguiente, avance automático, cambio de servidor, luces, ancho ampliado y pantalla completa.</p>
+      </article>
+      <article>
+        <h3 data-i18n="f.share.title">Links para compartir</h3>
+        <p data-i18n="f.share.text">Comparte una serie o un episodio con un link que lo abre directamente en la app de quien lo recibe.</p>
+      </article>
+      <article>
+        <h3 data-i18n="f.local.title">Tus datos se quedan contigo</h3>
+        <p data-i18n="f.local.text">Sin cuentas ni sincronización. Seguimientos y marcas de visto se guardan en una base local en tu equipo.</p>
+      </article>
+      <article>
+        <h3 data-i18n="f.updates.title">Español e inglés, con actualizaciones</h3>
+        <p data-i18n="f.updates.text">Cambia de idioma desde el encabezado. La app avisa de nuevas versiones y se actualiza cuando tú lo confirmas.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="screenshots" class="shots">
+    <h2 data-i18n="shots.title">Capturas</h2>
+    <figure class="window wide">
+      <img src="assets/screenshots/player.jpg" width="1600" height="974" loading="lazy" alt="Reproductor de Donghua Player con un episodio de KickAssAnime" data-i18n-alt="shot.player.alt">
+      <figcaption data-i18n="shot.player.cap">El reproductor ocupa toda la ventana. El servidor se cambia desde la esquina superior.</figcaption>
+    </figure>
+    <div class="pair">
+      <figure class="window">
+        <img src="assets/screenshots/episodes.jpg" width="1600" height="974" loading="lazy" alt="Página de una serie con su lista de episodios" data-i18n-alt="shot.series.alt">
+        <figcaption data-i18n="shot.series.cap">Cada serie con su lista de episodios y lo que ya viste.</figcaption>
+      </figure>
+      <figure class="window">
+        <img src="assets/screenshots/continue.jpg" width="1600" height="974" loading="lazy" alt="Sección Continuar viendo de la biblioteca" data-i18n-alt="shot.continue.alt">
+        <figcaption data-i18n="shot.continue.cap">Continuar viendo te devuelve al minuto exacto donde lo dejaste.</figcaption>
+      </figure>
+    </div>
+    <div class="pair">
+      <figure class="window">
+        <img src="assets/screenshots/lucifer.jpg" width="1600" height="974" loading="lazy" alt="Catálogo de Lucifer Donghua en la app" data-i18n-alt="shot.lucifer.alt">
+        <figcaption data-i18n="shot.lucifer.cap">Cada fuente conserva su color para saber siempre dónde estás.</figcaption>
+      </figure>
+      <figure class="window">
+        <img src="assets/screenshots/actions.jpg" width="1600" height="974" loading="lazy" alt="Panel de acciones del reproductor" data-i18n-alt="shot.actions.alt">
+        <figcaption data-i18n="shot.actions.cap">El panel de acciones agrupa navegación, marcas y ajustes de la ventana.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="download" class="download">
+    <h2 data-i18n="download.title">Descargar</h2>
+    <p class="muted" data-i18n="download.text">Gratis. Elige el instalador de tu sistema.</p>
+    <div id="downloads" class="downloads">
+      <a class="button" href="https://github.com/alabastida/donghua-player-releases/releases" rel="noreferrer" data-i18n="download.releases">Ver descargas en GitHub</a>
+    </div>
+    <ul class="notes muted small">
+      <li data-i18n="note.mac">macOS: sólo Apple Silicon. La app no está notarizada por Apple; si macOS bloquea la primera apertura, permítela en Ajustes del Sistema → Privacidad y seguridad → Abrir igualmente.</li>
+      <li data-i18n="note.win">Windows: x64. SmartScreen puede advertir porque el instalador no tiene certificado; elige «Más información» → «Ejecutar de todas formas».</li>
+      <li data-i18n="note.linux">Linux: x64, AppImage (con actualizaciones integradas) o .deb.</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="muted small">
+  <p data-i18n="footer.disclaimer">Donghua Player no está afiliado a los sitios que muestra. Los videos, anuncios y disponibilidad dependen de cada sitio.</p>
+  <p><a href="https://github.com/alabastida/donghua-player-releases/releases" rel="noreferrer" data-i18n="footer.releases">Versiones y notas</a></p>
+</footer>
+</body>
+</html>
