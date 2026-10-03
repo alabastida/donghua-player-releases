@@ -46,6 +46,8 @@ const EN = {
   'note.mac': 'macOS: Apple Silicon only. The app is not notarized by Apple; if macOS blocks the first launch, allow it in System Settings → Privacy & Security → Open Anyway.',
   'note.win': 'Windows: x64. SmartScreen may warn because the installer has no certificate; choose “More info” → “Run anyway”.',
   'note.linux': 'Linux: x64, AppImage (with built-in updates) or .deb.',
+  'disclaimer.title': 'We don’t host any content',
+  'disclaimer.text': 'Donghua Player does not host, store or provide videos, episodes, downloads or files of any kind, nor any illegal content. The app opens each provider’s own pages and players, and everything is streamed directly from their websites. If a provider offers an episode download, the file comes from that site’s own download page. The only thing we publish here is the app’s installers.',
   'footer.disclaimer': 'Donghua Player is not affiliated with the sites it shows. Videos, ads and availability depend on each site.',
   'footer.releases': 'Versions and notes',
   version: 'Latest version',

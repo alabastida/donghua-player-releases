@@ -52,6 +52,7 @@ h3{font-size:17px;margin:0 0 6px}
 .notes{padding-left:18px;margin:0}
 .notes li{margin-bottom:6px}
 
+.disclaimer p{max-width:760px;margin:0;color:#c9cad3}
 footer{width:calc(100% - 40px);max-width:1120px;padding:32px 0 48px;border-top:1px solid var(--line)}
 footer p{margin:0 0 8px}
 
