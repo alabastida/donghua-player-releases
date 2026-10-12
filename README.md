@@ -31,6 +31,7 @@ Each source keeps its own color, catalog, search, followed series and history.
 - **A clean player**: only the video is shown; known ad overlays and fake "not a robot" ads are removed. Real verification screens from a video host are left alone.
 - **Player controls**: server menu, previous/next episode, lights off, wide mode, fit the window to the video, fullscreen, and keyboard shortcuts (Space, N, P, F, W).
 - **Shareable links** (`donghuaplayer://`) that open a series or episode straight in the app.
+- **Live AI subtitles**: reads the burned-in Chinese subtitle, translates it on your computer (Spanish or English) and draws it over the player. Models download once from the app; GPU with Metal (Mac) or Vulkan (Windows/Linux), CPU fallback. Bilingual mode, pinyin, cultivation glossary, per-series glossary, `.srt` export, and offline pre-analysis of downloaded episodes for zero-latency subtitles. Playback with subtitles has been tested in depth on macOS; Windows/Linux builds include the engines but need a compatible GPU driver for speed.
 - **In-app updates**: new versions are offered inside the app and verified by signature before installing.
 
 The app does not host or download video; it shows each site's original player. Availability, ads and video quality depend on the sites.
